@@ -7,4 +7,8 @@ public interface IRepository<T> where T : class
     T Get(int index);
     List<T> GetAll();
     int Count { get; }
+
+    // --- Added for Oppgave 6 ---
+    bool Remove(T item);
+    void Clear();
 }
